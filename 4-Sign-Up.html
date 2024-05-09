@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SPCA | Sign-Up</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width= device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="styles-4-Sign-up.css"/>
+</head>
+<body>
+  <div class="row">
+<nav class="navbar">
+  <img src="SPCA-Logo.png"width="250" height="100" alt=""/>
+  <!--Reference img  From NSPCA website-->
+  <ul>
+  <li><a href="1-index.html" >Home</a></li>
+  <li><a href="2-What-We-Do.html">What We Do</a></li>
+  <li><a href="3-Contact-Us.html" target="_blank">Contact Us</a></li> 
+  <li><a href="4-Sign-Up.html" >Sign-Up</a></li>
+  </ul>
+</nav>
+  </div>
+  <div class="img">
+  <form class= "container">
+  <h1>Sign-Up</h1>
+  <label for="Name"><b>Name</b></label>
+  <input type="text" placeholder="Enter Name" name="Name" required>
+  <br>
+  <label for="Surname"><b>Surname</b></label>
+  <input type="text" placeholder="Enter Surname" name="Surname" required>
+  <br>           
+  <label for="phone"><b>phone number</b></label>
+  <input type="tel" id="phone" name="phone" placeholder="Enter Cell number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+  <br>          
+  <label for="email"><b>Email</b></label>
+  <input type="email" id="email" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"required>
+  <br>
+  <label for="Dogs"><b>Favourite Dog Breed:</b></label>
+  <select type="select" id="Dogs" name="Dog breeds" required>
+  <option value="" style="display:none">Please select</option>
+  <option value="German Shepherd">German Shepherd</option>
+  <option value="Labrador Retriever">Labrador Retriever</option>
+  <option value="Siberian Husky">Siberian Husky</option>
+  <option value="Alaskan Malamute">Alaskan Malamute</option>
+  <option value="Rottweiler">Rottweiler</option>
+  <option value="Pit Bull Terrier">Pit Bull Terrier</option>
+  </select>
+  <br>
+  <legend><b>Select one of the following:</b></legend>
+  <label>
+  <input type="radio" name="one" value="Dontae" required>
+    I would like to Donate money
+  </label><br>
+  <label>
+  <input type="radio" name="one" value="Volenteer">
+    I would like to Volenteer at an SPCA
+  </label><br>
+  <br>
+  <button type="submit" class="btn" onclick="openpopup()">okay</button> 
+  <div class="popup" id="popup">
+  <img src="checkmark.jpeg">
+  <h2>Thank you</h2>
+  <p>Thank you for your enqiury</p>
+  <button type="button" onclick="closepopup()">close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <script>
+    let popup =document.getElementById("popup");
+    function openpopup(){popup.classList.add("open-popup")}
+    function closepopup(){popup.classList.remove("open-popup")}
+  </script>
+  </form>
+  <div class="footer">
+<footer>
+  <p> &copy 2023 Society for the Prevention of Cruelty to Animals</p>
+  <p id="displayDateTime"></p>
+  <script>
+    var today = new Date();
+    var day = today.getDay();
+    var daylist = ["Sunday ","Monday ","Tuesday ","Wednesday ","Thursday ","Friday ","Saturday "];
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
+    document.getElementById("displayDateTime").innerHTML =  daylist[day]+dateTime;
+  </script>
+</footer>   
+  </div>
+</body>
+</html>

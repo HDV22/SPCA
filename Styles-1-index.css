@@ -1,0 +1,91 @@
+*
+    {font-family: "Poppins", sans-serif;}
+    
+.container
+    {min-height: 91vh;
+    background-color: rgb(228, 228, 228);
+    background-image: url("SPCA-Home.jpg");
+    background-repeat: no-repeat;
+    background-size: 55% 100%;
+    background-position:right;}
+
+.row 
+    {padding: 10px 60px;}
+
+.navbar
+    {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    margin: -18px  -60px;
+    background-color: #12273a}
+
+.navbar ul
+    {display: flex;}
+
+.navbar ul li
+    {list-style: none;}
+
+.navbar ul li a
+    {padding: 10px 18px;
+    border-radius:10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color:#fffdfd;
+    text-decoration: none;}
+
+.navbar ul li a:hover
+    {background-color:#174873;;}
+
+.navbar h1 
+    {color: #174873;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 0px;}
+
+.Content
+    {width: 450px;}
+
+.Content h1
+    {font-size: 45px;
+    color: #0D0D0D;
+    font-weight: 500;
+    margin: 40px 0px;
+    margin-top: 140px;}
+
+.Content h3
+    {font-size: 25px;
+    color: #174873;
+    font-weight: 200;
+    margin: -20px 0px;}
+
+.Content p
+    {font-size: 16px;
+    color: #0D0D0D;
+    letter-spacing: 1px;}
+
+strong {color: #aa0202;
+        text-align: justify;}
+        
+abbr
+    {font-style: italic;
+    color: #174873;}
+
+.Content a
+    {text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+    background-color: #7B92A6;;
+    border-radius: 5px;
+    color: #0D0D0D;} 
+
+.Content a:hover
+    {background-color: #174873;}
+
+.footer
+    {background-color: #12273a;
+    padding: 5px;
+    text-align: center;
+    color: #fffdfd;
+    border-bottom-width: 2em;}

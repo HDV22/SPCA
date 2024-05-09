@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SPCA | Contact Us</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width= device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="Styles-3-con.css"/>
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+  <nav class="navbar">
+  <img src="SPCA-Logo.png"width="250" height="100" alt=""/>
+  <!--Reference img  From NSPCA website-->
+  <ul>
+  <li><a href="1-index.html">Home</a></li>
+  <li><a href="2-What-We-Do.html">What We Do</a></li>
+  <li><a href="3-Contact-Us.html" target="_blank">Contact Us</a></li> 
+  <li><a href="4-Sign-Up.html">Sign-Up</a></li>
+  </ul>
+</nav>
+  </div>
+  </div>
+  <div class="Content">
+  <h1>Contact Info</h1>
+  <h2><em>Freedom from pain, injury and disease.</em></h2>
+  <blockquote>We strive to prevent cruelty and promote the welfare of all animals.</blockquote>
+  <p>For more Infomation cantact us on <br>011 907 3590<br>OR<br> 
+  <a href = "mailto:nspca@nspca.co.za ">Send Us a Email</a><br> 
+  <br>visit us at
+  <address>
+  6 Clark Road, <br>
+  Florentia,Alberton <br>
+  Johannesburg, South Africa<br>
+  </address><br>OR<br>
+  <a href="https://nspca.co.za" target="_blank">Visit NSPCA!</a><br><br><br></p>
+  </div> 
+  <div class="footer">
+<footer>
+  <p>&reg; 2023 Society for the Prevention of Cruelty to animals</p>
+  <p id="displayDateTime"></p>
+  <script>
+    var today = new Date();
+    var day = today.getDay();
+    var daylist = ["Sunday ","Monday ","Tuesday ","Wednesday ","Thursday ","Friday ","Saturday "];
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
+    document.getElementById("displayDateTime").innerHTML =  daylist[day]+dateTime;
+  </script>
+</footer>   
+      </div>
+</body>
+</html>
